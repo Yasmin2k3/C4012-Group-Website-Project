@@ -1,0 +1,267 @@
+/* colours: FD9149 (orange) (optional orange? F39E65), E3E3E3 (white), 2A2A2A (black)
+*/
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0 ;
+  background-color: #E3E3E3;
+  font-family: 'Bitter', serif;
+}
+
+
+.topnav {
+  background-color: #2A2A2A;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #E3E3E3;
+  text-align: center;
+  padding: 16px 6%;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+/* Change the color of links on hover */
+
+.topnav a.navbutton:hover {
+  background-color: #E3E3E3;
+  color: #2A2A2A;
+  transition: background-color 300ms linear;
+}
+
+.topnav a.active {
+  float: right;
+  background-color: #F39E65;
+  color: #E3E3E3;
+}
+
+.topnav a.navbutton{
+  float: right;
+}
+
+/*Footer:*/
+.footer{
+  padding: 10px 16px;
+  background-color: #2A2A2A;
+  color: #E3E3E3;
+}
+
+.footer a{
+  color: #E3E3E3;
+  text-decoration: none;
+}
+
+.contactLinks a{
+  color: #E3E3E3;
+  text-decoration: none;
+}
+
+.contactLinks a:hover{
+  background-color: #F39E65;
+  border-radius: 10px;
+  padding: 5px;
+  transition: background-color 200ms linear;
+}
+/*End of Footer*/
+
+
+
+
+/*INDEX STUFF */
+/* Add a color to the active/current link */
+.front-image{
+  position: relative;
+  display: block;
+  height: 800 px;
+  width: 100%;
+}
+
+.front-text{
+  position: absolute; 
+  top: 200px;  
+  width: 100%; 
+  color: #E3E3E3;
+  text-align: center;
+}
+
+.title{
+  background-color: #2A2A2A;
+  color: #F39E65;
+  text-align: center;
+  padding: 16px 6%;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+  background-color: #E3E3E3;
+  margin: 10px;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Add some padding inside the card container */
+.container {
+  margin: 25px;
+  padding: 2px 16px;
+  width: 100px;
+  text-align: center;
+}
+/* END OF INDEX STUFF */
+
+.donate{
+  margin: auto;
+  margin-top: 50px;
+  height: 125px;
+  width: 400px;
+  padding-top: 10px;
+}
+
+.donate a{
+  font-size: 100px;
+  text-decoration: none;
+  border-style: solid;
+  border-radius: 25px;
+  border-width: 10px;
+  border-color: #F39E65;
+  text-align: center;
+  color:#2A2A2A;
+  background-color: #F39E65;
+  font-weight: bold;
+}
+.donate a:hover{
+  border-color: #2A2A2A;
+  color: #F39E65;
+  background-color: #2A2A2A;
+}
+
+.thetimelinethatshallnotbenamed {
+  margin:50px;
+}
+.aboutUs {
+  margin:50px;
+}.left img {
+   margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 300px;
+  height: 200px
+}
+.right img {
+   margin: 5px;
+  border: 1px solid #ccc;
+  float: right;
+  width: 300px;
+  height: 200px
+}
+
+.donateform {
+  position: absolute;
+  top: 1400px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  background: white;
+  border-radius: 20px;
+  
+}
+
+.donateform h1 {
+  text-align: center;
+  padding: 0 0 20px 0;
+  border-bottom: 1px solid silver;
+}
+
+.donateform form {
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+
+form .donateinfo {
+  position: relative;
+  border-bottom: 2px solid #E3E3E3;
+  margin: 0 30px;
+}
+
+.donateinfo input {
+  width: 100%;
+  padding: 0 5px;
+  height: 40px;
+  font-size: 16px;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.donateinfo label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  color: #E3E3E3;
+  transform: translateY(-50%);
+  font-size: 16px;
+  pointer-events: none;
+  transition: .5s;
+}
+
+.donateinfo span::before {
+  content: "";
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: #FD9149;
+  transition: .5s;
+}
+
+.donateinfo input:focus ~ label,
+.donateinfo input:valid ~ label {
+  top: -5px;
+  color: #FD9149;
+  
+}
+
+.donateinfo input:focus ~ span::before,
+.donateinfo input:valid ~ span::before {
+  width: 100%;
+}
+
+input[type="submit"] {
+  width: 100%;
+  height: 50px;
+  border: 5px solid;
+  border-color: white ;
+  background: #FD9149;
+  border-radius: 25px;
+  font-size: 18px;
+  color: #E3E3E3;
+  font-weight: 700;
+  cursor: pointer;
+  outline: none;
+  margin-bottom: 10px;
+}
+
+input[type="submit"]:hover {
+  border-color: #FD9149;
+}
+
+.donatetext {
+  margin: auto;
+  width: 900px;
+  text-align: center;
+  border-bottom: 10px solid #2A2A2A; 
+  border-radius: 20px;
+
+}
+
+.donateimage img {
+  width: 100%;
+  border-radius: 20px;
+}
